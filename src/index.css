@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import '~antd/dist/antd.css';
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*::before, *::after {
+   box-sizing: border-box;
+}
+
+html {scroll-behavior: smooth;}
+
+body {
+   width: 100%;
+   height: 100%;
+   font-size: 16px;
+}
+
+header {
+   background: #fff;
+}
+
+.container {
+   width: 90%;
+   max-width: 90%;
+   margin: 0 auto;
+}
+
+button.selectButton {
+   padding: 0.625rem 1.875rem; /* 10px 20px */
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   font-size: 1rem;
+   font-weight: 700;
+   border: none;
+   border-radius: 40px;
+   background: #00903A;
+   color: #FFF;
+   cursor: pointer;
+}
+
+#root {
+   width: 100%;
+   height: 100%;
+}
+
+@media screen and (max-width: 500px) {
+   body {
+      font-family: 14px;
+   }
 }
